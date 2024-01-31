@@ -1,0 +1,4 @@
+---
+BasedOnStyle: LLVM
+ColumnLimit: 80  # 设置行宽限制为80个字符
+...
