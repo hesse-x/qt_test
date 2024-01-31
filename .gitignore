@@ -1,0 +1,6 @@
+*.stash
+*.swp
+*.swo
+
+*.o
+Makefile
