@@ -10,6 +10,6 @@ set(EngineHdr
   Registry.h
 )
 
-add_library(Engine SHARED ${EngineSrc})
+add_library(Engine ${EngineSrc})
 # target_compile_options(Engine PRIVATE -fvisibility=hidden)
 target_link_libraries(Engine PRIVATE Item)

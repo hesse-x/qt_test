@@ -17,6 +17,9 @@ add_custom_target(
     COMMENT "Running clang-tidy"
 )
 
+# Find the Google Test package
+find_package(GTest REQUIRED)
+
 # 配置iwyu
 find_program(IWYU_PATH NAMES include-what-you-use include-what-you-use)
 add_custom_target(
@@ -43,7 +46,6 @@ add_subdirectory(Game)
 
 add_executable(Exec Game/Entry/main.cpp)
 target_link_libraries(Exec PRIVATE MainWindow)
-target_link_options(Exec PRIVATE "-Wl,--no-as-needed")
 target_link_libraries(Exec PRIVATE Games)
 
 # 添加可执行文件
