@@ -1,3 +1,5 @@
+#include <cmath>
+
 #include <QtCore/QPoint>
 #include <QtCore/QRect>
 
@@ -8,6 +10,12 @@ public:
   using QRect::QRect;
   void paint(QPainter &painter) const;
 };
+
+inline double distance(const ItemBase &a, const ItemBase &b) {
+  double dx = a.x() - b.x();
+  double dy = a.y() - b.y();
+  return std::sqrt(dx * dx + dy * dy);
+}
 
 class DynamicItemBase : public ItemBase {
 public:

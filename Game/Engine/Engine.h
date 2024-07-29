@@ -10,6 +10,7 @@ public:
   virtual ~Engine() = default;
   enum class Type : int {
     game0 = 0,
+    game1 = 1,
   };
   static Engine *create(Type type);
   void init(int w, int h, int dt, QSet<int> *keyboard,

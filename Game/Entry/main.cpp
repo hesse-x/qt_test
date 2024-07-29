@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
   QApplication app(argc, argv);
-  auto *game0 = Engine::create(Engine::Type::game0);
+  auto *game0 = Engine::create(Engine::Type::game1);
   MainWindow window(game0);
   window.show();
   return app.exec();

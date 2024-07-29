@@ -1,5 +1,6 @@
 set(GameSrc
   Game0.cpp
+  Game1.cpp
 )
 
 # set(GameHdr
